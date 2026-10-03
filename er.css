@@ -1,0 +1,229 @@
+```css
+/* =========================
+   BẢNG MÀU ĐƠN TÔNG
+   =========================
+   Bậc 1: #00ADEE
+   Bậc 2: #00B2EF
+   Bậc 4: #00BFF2
+   Bậc 7: #8DD7F7
+   Bậc 9: #C6E9FA
+*/
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #000000;
+    background-color: #ffffff;
+}
+
+/* =========================
+   HEADER
+   ========================= */
+
+.header {
+    background-color: #00ADEE;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8%;
+}
+
+.logo {
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #C6E9FA;
+}
+
+/* =========================
+   BANNER
+   Màu nền bậc 4
+   ========================= */
+
+.banner {
+    background-color: #00BFF2;
+    color: #ffffff;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.banner h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.banner p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+button {
+    border: none;
+    padding: 12px 25px;
+    background-color: #00ADEE;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #00B2EF;
+}
+
+/* =========================
+   ON SALE / PREVIEW
+   Màu bậc 1
+   ========================= */
+
+.sale {
+    background-color: #00ADEE;
+    color: #ffffff;
+    text-align: center;
+    padding: 45px 20px;
+}
+
+.sale h2 {
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+.sale p {
+    margin-bottom: 20px;
+}
+
+.preview {
+    background-color: #ffffff;
+    color: #00ADEE;
+}
+
+.preview:hover {
+    background-color: #C6E9FA;
+}
+
+/* =========================
+   CONTENT
+   Màu nền bậc 7
+   ========================= */
+
+.content {
+    background-color: #8DD7F7;
+    padding: 70px 8%;
+    text-align: center;
+}
+
+.content > h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+/* Products */
+
+.products {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.product {
+    background-color: #ffffff;
+    width: 300px;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-image {
+    height: 150px;
+    background-color: #C6E9FA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #00ADEE;
+    font-weight: bold;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.product h3 {
+    color: #000000;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.product p {
+    color: #000000;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* =========================
+   FOOTER
+   Màu bậc 9
+   ========================= */
+
+.footer {
+    background-color: #C6E9FA;
+    color: #000000;
+    text-align: center;
+    padding: 25px;
+    font-size: 15px;
+}
+
+/* =========================
+   RESPONSIVE
+   ========================= */
+
+@media (max-width: 768px) {
+
+    .header {
+        height: auto;
+        padding: 20px;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .banner h1 {
+        font-size: 32px;
+    }
+
+    .products {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product {
+        width: 90%;
+    }
+}
+```
